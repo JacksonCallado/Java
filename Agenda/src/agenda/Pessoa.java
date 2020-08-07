@@ -39,15 +39,13 @@ public class Pessoa {
     private int idade;
     
     public Pessoa(){
-        nome = "";
-        telefone = "";
-        idade = 0;
+        this("", "", 0);
     }
     
     public Pessoa(String nom, String tel, int id){
-        nome = nom;
-        telefone = tel;
-        idade = id;
+        this.setNome(nom);
+        this.setTelefone(tel);
+        this.setIdade(id);
     }
     
     public boolean testeIdade(int idade){
