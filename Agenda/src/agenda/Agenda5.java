@@ -24,8 +24,10 @@ public class Agenda5 {
         p1.setNome("Antonio");
         p1.setTelefone("456453");
         p1.setIdade(12);
-        
-        p1 = p2;
+        p3.setNome("Jose"); 
+
+        //Pessoa.imposto = 7;
+       
         
         
         

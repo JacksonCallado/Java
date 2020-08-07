@@ -11,29 +11,7 @@ package agenda;
  */
 public class Pessoa {
 
-    public String getNome() {
-        return nome;
-    }
-
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
-    public String getTelefone() {
-        return telefone;
-    }
-
-    public void setTelefone(String telefone) {
-        this.telefone = telefone;
-    }
-
-    public int getIdade() {
-        return idade;
-    }
-
-    public void setIdade(int idade) {
-        this.idade = idade;
-    }
+    public static final double IMPOSTO = 5;
     private String nome;
     private String telefone;
     private int idade;
@@ -61,7 +39,35 @@ public class Pessoa {
     }    
     
     public String mostrarDados(){
-        String retorno = "Nome: " + nome + " Idade: " + idade + " Telefone: " +telefone;
+        String retorno = "Nome: " + nome + 
+                         " - Idade: " + idade + 
+                         " - Telefone: " + telefone +
+                         " - Imposto: " + IMPOSTO;
         return retorno;
     }
+    
+        public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public String getTelefone() {
+        return telefone;
+    }
+
+    public void setTelefone(String telefone) {
+        this.telefone = telefone;
+    }
+
+    public int getIdade() {
+        return idade;
+    }
+
+    public void setIdade(int idade) {
+        this.idade = idade;
+    }
+    
 }
