@@ -48,6 +48,10 @@ public class Pessoa {
         this.setIdade(id);
     }
     
+    public Pessoa(Pessoa p){
+        this(p.getNome(), p.getTelefone(), p.getIdade());
+    }
+    
     public boolean testeIdade(int idade){
         if (idade >= 0){
             return true;

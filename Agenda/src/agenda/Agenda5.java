@@ -18,11 +18,16 @@ public class Agenda5 {
         // TODO code application logic here
         
         Pessoa p1 = new Pessoa();
-        Pessoa p2 = new Pessoa("Joao", "123456", 45);
+        Pessoa p2 = new Pessoa("Joao", "123456", 45);        
+        Pessoa p3 = new Pessoa(p2);
         
-        Pessoa p3 = p2;
+        p1.setNome("Antonio");
+        p1.setTelefone("456453");
+        p1.setIdade(12);
         
-        p2.setIdade(12);
+        p1 = p2;
+        
+        
         
         /*
         p1.nome = "Antonio";
@@ -35,6 +40,28 @@ public class Agenda5 {
         System.out.println(p1.mostrarDados());
         System.out.println(p2.mostrarDados());
         System.out.println(p3.mostrarDados());
-    }
-    
+        
+        System.out.println("-------------------------------------------------");
+        
+        System.out.println(p1);
+        System.out.println(p2);
+        System.out.println(p3);
+
+        if (p1.getIdade() > p2.getIdade()){
+            System.out.println(p1.getNome());
+        } else {
+            System.out.println(p2.getNome());
+        }
+        
+        /*
+        
+        forma que não funciona pois não é possivel comparar objetos dessa maneira
+        
+        if (p1 > p2){
+            System.out.println(p1.getNome());
+        } else {
+            System.out.println(p2.getNome());
+        }
+        */
+    }    
 }
